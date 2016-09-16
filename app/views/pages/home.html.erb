@@ -10,7 +10,8 @@
     <div class="well">
      <h2 class="text-center">basic Membership</h2> 
      <h4> inscription gratuite pour avoir acces à la communauté.</h4>
-      <%= link_to "inscription grauite", new_user_registration_path , class: 'btn btn-primary btn-lg btn-block' %>
+      <%= link_to "inscription grauite", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+
     </div>
   </div>
     <div class="col-md-6">
@@ -18,7 +19,7 @@
          <h2 class="text-center"> pro Membership</h2> 
          <h4>inscription pour 10€/par mois pour avoir un peu plus.</h4>
          
-      <%= link_to "inscription pro", new_user_registration_path , class: 'btn btn-success btn-lg btn-block' %>
+          <%= link_to "inscription pro", new_user_registration_path(plan: @pro_plan.id) , class: 'btn btn-success btn-lg btn-block' %>
 
       </div>    
   </div>
